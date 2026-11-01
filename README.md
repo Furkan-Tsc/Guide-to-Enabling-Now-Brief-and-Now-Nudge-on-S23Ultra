@@ -112,6 +112,24 @@ setprop ctl.restart zygote
 '
 ```
 
+### Notification Highlights (Summarize Notifications)
+
+Also you want Notification Highlights download Samsung Language Core 3.2.40.5 (version is important) APK from APKMirror.<br />
+Notification Highlights just check these flags and we already edited.<br />
+SEC_FLOATING_FEATURE_COMMON_CONFIG_AI_VERSION ≥ 20261<br />
+SEC_FLOATING_FEATURE_GENAI_CONFIG_LLM_VERSION ≥ 1.70<br />
+And run this in command termux:<br />
+
+```bash
+su -mm -c '
+settings put secure noti_intelligence_first_time 1
+settings put system ai_info_confirmed 1
+settings put secure noti_intelligence_priority_content 1
+settings put system noti_intelligence_priority_conversation 1
+settings put secure noti_intelligence_summarize_content 1
+'
+```
+
 #### Finally you have these features enjoy them!
 
 <img width="720" height="1482" alt="Screenshot_20261030_231737_Personal data intelligence" src="https://github.com/user-attachments/assets/2cf83b55-a197-4a5e-8ddb-e954822797d9" />
