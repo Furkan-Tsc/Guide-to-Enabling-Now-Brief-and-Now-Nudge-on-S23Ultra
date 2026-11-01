@@ -6,6 +6,7 @@ Soft Root (Using Root My Galaxy) <br />
 LSPosed / Vector (with ZygiskNext) <br />
 CorePatch (4.9) module (signature verification and version downgrading patches enabled) <br />
 Termux <br />
+NowBar Fix <br />
 
 ### Step 1: Bypassing the APK Installation Block
 Samsung One UI 8.5 prevents the external updating or downgrading of the `com.samsung.android.smartsuggestions` package, resulting in the error: `-3001: INSTALL_FAILED_REJECTED_BY_BUILDTYPE`. <br />
