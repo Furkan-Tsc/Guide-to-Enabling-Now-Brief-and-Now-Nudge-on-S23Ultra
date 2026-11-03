@@ -27,6 +27,7 @@ Why `AODService`? Because `SystemUI` and `AODService` share the same group with 
 We used Python script `GenUIBridge.py` to create the GenUIBridge.apk, i.e. the bridge package.<br />
 In short, we copy Samsung’s signature from AODService.apk and create an APK that will act as a bridge; this APK is granted the `BIND_GENUI_SERVICE` permission. Without this permission, Now Brief won’t appear in Now Bar or AOD.<br />
 [GenUIBridge.py](https://github.com/user-attachments/files/34246976/GenUIBridge.py) Run this script then install GenUIBridge.apk to device.<br />
+Also you download and install AlwaysOnDisplay (8.9.66.1 version is important) from APKMirror.
 
 Finally NowBarItemManager has restarted; since `BIND_GENUI_SERVIC`E now has `granted=true` for `uid=10048`, it has connected to GenUIService, and a Now Brief card has appeared on the Now Bar on the lock screen.<br />
 
